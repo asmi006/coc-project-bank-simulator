@@ -5,7 +5,7 @@
 
 #define SIMULATION_TIME 480 // 8 hours = 480 minutes
 
-// ----- Structure to represent a customer -----
+
 typedef struct Customer {
     int arrival_time;      // Minute they arrive
     int service_start;     // Minute service starts
@@ -37,7 +37,7 @@ int main() {
     Customer *head = NULL, *tail = NULL;
     int *teller_busy_time = calloc(tellers, sizeof(int));
 
-    double *wait_times = malloc(10000 * sizeof(double)); // dynamic array for wait times
+    double *wait_times = malloc(10000 * sizeof(double)); 
     int wait_count = 0;
     int capacity = 10000;
 
